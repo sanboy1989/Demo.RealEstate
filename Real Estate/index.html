@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Aria Chen Real Estate — Vancouver's trusted real estate authority. Buy, sell, and explore Vancouver's finest communities with local expertise since 2012." />
+  <title>Aria Chen | Real Estate — Vancouver's Trusted Authority</title>
+
+  <!-- Open Graph — WhatsApp / Facebook / LinkedIn share preview -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://ariachenrealestate.com/" />
+  <meta property="og:title"       content="Aria Chen | Vancouver Real Estate Authority" />
+  <meta property="og:description" content="From hidden gems to luxury estates — navigate Vancouver's market with local expertise since 2012." />
+  <meta property="og:image"       content="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale"      content="en_CA" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="twitter:title"      content="Aria Chen | Vancouver Real Estate Authority" />
+  <meta name="twitter:description" content="From hidden gems to luxury estates — navigate Vancouver's market with local expertise since 2012." />
+  <meta name="twitter:image"      content="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Critical CSS: nav + hero rendered without waiting for style.css -->
+  <style>
+    :root{--color-primary:#A07850;--color-dark:#1A2340;--color-light:#F8F5F0;--color-accent:#C9A96E;--color-cta:#E8714A;--color-text-dark:#1C1C1E;--color-white:#FFFFFF;--font-serif:'Playfair Display',Georgia,serif;--font-sans:'Inter',system-ui,sans-serif;--space-md:1.5rem;--space-lg:2.5rem;--space-2xl:6rem;--container-max:1280px;--container-pad:1.25rem;--radius-sm:6px;--transition:0.3s ease;--transition-slow:0.6s ease;--nav-h:72px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;font-size:16px;overflow-x:hidden}
+    body{font-family:var(--font-sans);color:var(--color-text-dark);background:var(--color-light);line-height:1.7;overflow-x:hidden;max-width:100vw}
+    img{display:block;max-width:100%;height:auto}
+    picture{display:contents}
+    section,header,footer,.container,article{max-width:100%;box-sizing:border-box}
+    a{color:inherit;text-decoration:none}
+    button{font-family:var(--font-sans);cursor:pointer;border:none;background:none}
+    ul{list-style:none}
+    .container{max-width:var(--container-max);margin:0 auto;padding:0 var(--container-pad)}
+    .br-desktop{display:none}
+    .fade-in{opacity:0;transform:translateY(20px);animation:fadeInUp 0.8s var(--transition-slow) forwards}
+    .fade-in--delay-1{animation-delay:.3s}.fade-in--delay-2{animation-delay:.55s}.fade-in--delay-3{animation-delay:.75s}.fade-in--delay-4{animation-delay:.95s}
+    @keyframes fadeInUp{to{opacity:1;transform:none}}
+    .reveal{opacity:0;transform:translateY(32px);transition:opacity .7s var(--transition-slow),transform .7s var(--transition-slow)}
+    .reveal.is-visible{opacity:1;transform:none}
+    .reveal:nth-child(2){transition-delay:.1s}.reveal:nth-child(3){transition-delay:.2s}.reveal:nth-child(4){transition-delay:.3s}.reveal:nth-child(5){transition-delay:.4s}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-sans);font-size:.9rem;font-weight:600;letter-spacing:.04em;padding:.8rem 1.75rem;border-radius:var(--radius-sm);transition:background var(--transition),color var(--transition),border-color var(--transition),transform var(--transition),box-shadow var(--transition);white-space:nowrap;cursor:pointer;text-align:center}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.12)}
+    .btn--coral{background:var(--color-cta);color:var(--color-white);border:2px solid var(--color-cta)}
+    .btn--coral:hover{background:#d85f38;border-color:#d85f38}
+    .btn--outline-white{background:transparent;color:var(--color-white);border:2px solid rgba(255,255,255,.65)}
+    .btn--outline-white:hover{background:rgba(255,255,255,.12);border-color:var(--color-white)}
+    .site-nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nav-h);background:linear-gradient(to bottom,rgba(26,35,64,.55) 0%,transparent 100%);transition:background var(--transition),backdrop-filter var(--transition),box-shadow var(--transition)}
+    .site-nav.is-scrolled{background:rgba(26,35,64,.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 2px 24px rgba(0,0,0,.22)}
+    .nav-inner{height:100%;display:flex;align-items:center;gap:var(--space-md)}
+    .nav-logo{font-family:var(--font-serif);font-size:clamp(.85rem,4vw,1.1rem);font-weight:700;color:var(--color-white);letter-spacing:.03em;white-space:nowrap;flex-shrink:1;min-width:0;overflow:hidden;text-overflow:ellipsis}
+    .nav-logo span{font-weight:400;opacity:.75}
+    .nav-links{display:none;flex:1;justify-content:center;gap:2.5rem}
+    .nav-links a{font-size:.88rem;font-weight:500;color:rgba(255,255,255,.85);letter-spacing:.03em;position:relative;transition:color var(--transition)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;right:100%;height:1px;background:var(--color-accent);transition:right var(--transition)}
+    .nav-links a:hover{color:var(--color-white)}.nav-links a:hover::after{right:0}
+    .nav-cta{flex-shrink:0;display:none}
+    .nav-hamburger{margin-left:auto;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;padding:10px;min-width:44px;min-height:44px}
+    .nav-hamburger span{display:block;width:22px;height:2px;background:var(--color-white);border-radius:2px;transition:transform var(--transition),opacity var(--transition)}
+    .nav-hamburger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .nav-hamburger.is-open span:nth-child(2){opacity:0}
+    .nav-hamburger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .nav-mobile-menu{position:absolute;top:100%;left:0;right:0;z-index:999;display:flex;flex-direction:column;gap:0;background:rgba(26,35,64,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:0 var(--container-pad);max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease}
+    .nav-mobile-menu.is-open{max-height:400px;padding:1.5rem var(--container-pad) 2rem}
+    .nav-mobile-menu a{color:rgba(255,255,255,.88);font-size:1rem;font-weight:500;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.08);transition:color var(--transition)}
+    .nav-mobile-menu a:hover{color:var(--color-white)}.nav-mobile-menu .btn{margin-top:1rem}
+    .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding-top:var(--nav-h);overflow:hidden}
+    .hero__bg{position:absolute;inset:0;z-index:0}
+    .hero__img{width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.04);animation:heroZoom 12s ease-out forwards}
+    @keyframes heroZoom{to{transform:scale(1)}}
+    .hero__overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(26,35,64,.72) 0%,rgba(26,35,64,.55) 50%,rgba(26,35,64,.42) 100%)}
+    .hero__content{position:relative;z-index:1;padding:var(--space-2xl) var(--container-pad);max-width:820px}
+    .hero__eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent);margin-bottom:1rem}
+    .hero__headline{font-family:var(--font-serif);font-size:clamp(2.2rem,6vw,4.2rem);font-weight:700;color:var(--color-white);line-height:1.15;margin-bottom:1.25rem}
+    .hero__subheadline{font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.82);font-weight:300;line-height:1.65;margin-bottom:2rem;max-width:600px}
+    .hero__ctas{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:var(--space-2xl)}
+    .hero__stats{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+    .stat{display:flex;flex-direction:column;gap:.2rem}
+    .stat__number{font-family:var(--font-serif);font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700;color:var(--color-white);line-height:1}
+    .stat__label{font-size:.78rem;color:rgba(255,255,255,.65);font-weight:400;letter-spacing:.04em;text-transform:uppercase}
+    .stat__divider{width:1px;height:40px;background:rgba(255,255,255,.25)}
+    .hero__scroll-hint{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center}
+    .hero__scroll-line{display:block;width:1px;height:48px;background:linear-gradient(to bottom,rgba(255,255,255,.6),transparent);animation:scrollPulse 2s ease-in-out infinite}
+    @keyframes scrollPulse{0%,100%{opacity:1;transform:scaleY(1)}50%{opacity:.4;transform:scaleY(.6)}}
+    @media(max-width:639px){
+      .hero__content{padding-top:var(--space-lg);padding-bottom:var(--space-lg)}
+      .hero__ctas{flex-direction:column;align-items:stretch;margin-bottom:var(--space-lg)}
+      .hero__ctas .btn{width:100%;justify-content:center}
+      .hero__stats{flex-direction:column;gap:0;padding-top:var(--space-md);border-top:1px solid rgba(255,255,255,.2);flex-wrap:unset;text-align:left}
+      .stat{align-items:flex-start;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.12);flex-direction:row;gap:.75rem}
+      .stat:last-child{border-bottom:none}
+      .stat__number{font-size:clamp(1.3rem,6vw,1.8rem);min-width:5rem}
+      .stat__label{font-size:.8rem;align-self:center}
+      .stat__divider{display:none}
+    }
+    @media(min-width:640px){:root{--container-pad:2rem}}
+    @media(min-width:1024px){
+      :root{--container-pad:2.5rem}
+      .br-desktop{display:block}
+      .nav-links{display:flex}.nav-cta{display:inline-flex}
+      .nav-hamburger{display:none}.nav-mobile-menu{display:none}
+    }
+  </style>
+
+  <!-- Full stylesheet — loaded async, non-blocking -->
+  <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="style.css" /></noscript>
+
+  <!-- Preload critical hero image -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80" fetchpriority="high" />
+
+  <!-- Canonical & hreflang (add /zh/ path when Chinese version is ready) -->
+  <link rel="canonical" href="https://ariachenrealestate.com/" />
+  <link rel="alternate" hreflang="en" href="https://ariachenrealestate.com/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://ariachenrealestate.com/zh/" />
+  <link rel="alternate" hreflang="x-default" href="https://ariachenrealestate.com/" />
+
+  <!-- JSON-LD: RealEstateAgent Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Aria Chen Real Estate",
+    "description": "Vancouver's trusted real estate authority. Buy, sell, and explore Vancouver's finest communities with local expertise since 2012.",
+    "url": "https://ariachenrealestate.com",
+    "telephone": "+16045550182",
+    "email": "aria@ariachenrealestate.com",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1200-1166 Alberni Street",
+      "addressLocality": "Vancouver",
+      "addressRegion": "BC",
+      "postalCode": "V6E 1A2",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.2827,
+      "longitude": -123.1207
+    },
+    "areaServed": [
+      "West Vancouver", "Yaletown", "Kitsilano",
+      "Coal Harbour", "Shaughnessy", "North Vancouver"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "98",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Michael & Sarah T." },
+        "reviewBody": "Aria's market knowledge is unparalleled. She sold our home 15% above asking in just 4 days. Absolutely phenomenal."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Jenny L." },
+        "reviewBody": "As first-time buyers, we felt completely overwhelmed. Aria guided us every step of the way and found us our dream home."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "David K." },
+        "reviewBody": "Professional, responsive, and incredibly strategic. Aria is the only agent I'll ever use in Vancouver."
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/ariachenrealestate",
+      "https://www.facebook.com/ariachenrealestate",
+      "https://www.linkedin.com/in/ariachen-realestate"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <header class="site-nav" id="siteNav">
+    <div class="nav-inner container">
+      <a href="#hero" class="nav-logo">ARIA CHEN <span>| Real Estate</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#search">Buy</a>
+        <a href="#valuation">Sell</a>
+        <a href="#communities">Communities</a>
+        <a href="#social-proof">Market Data</a>
+        <a href="#about">About</a>
+      </nav>
+      <a href="#valuation" class="btn btn--outline-white nav-cta">Book Consultation</a>
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#search">Buy</a>
+      <a href="#valuation">Sell</a>
+      <a href="#communities">Communities</a>
+      <a href="#social-proof">Market Data</a>
+      <a href="#about">About</a>
+      <a href="#valuation" class="btn btn--coral">Book Consultation</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         SECTION 1: HERO
+    ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="https://images.unsplash.com/photo-1613490493576-7fde63acd811?fm=webp&w=480&q=70 480w,
+                    https://images.unsplash.com/photo-1613490493576-7fde63acd811?fm=webp&w=768&q=80 768w,
+                    https://images.unsplash.com/photo-1613490493576-7fde63acd811?fm=webp&w=1280&q=80 1280w,
+                    https://images.unsplash.com/photo-1613490493576-7fde63acd811?fm=webp&w=1920&q=80 1920w"
+            sizes="100vw"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80"
+            srcset="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=480&q=70 480w,
+                    https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=768&q=80 768w,
+                    https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1280&q=80 1280w,
+                    https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80 1920w"
+            sizes="100vw"
+            alt="Luxury home exterior in Vancouver"
+            class="hero__img"
+            fetchpriority="high"
+            decoding="sync"
+            width="1920"
+            height="1080"
+          />
+        </picture>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow fade-in">Vancouver Real Estate</p>
+        <h1 class="hero__headline fade-in fade-in--delay-1">
+          Elevating Your Real Estate<br />Experience in Vancouver
+        </h1>
+        <p class="hero__subheadline fade-in fade-in--delay-2">
+          From Hidden Gems to Luxury Estates — Navigate the Market<br class="br-desktop" /> with Local Authority
+        </p>
+        <div class="hero__ctas fade-in fade-in--delay-3">
+          <a href="#search" class="btn btn--coral">I'm Looking to Buy</a>
+          <a href="#valuation" class="btn btn--outline-white">What's My Home Worth?</a>
+        </div>
+
+        <div class="hero__stats fade-in fade-in--delay-4">
+          <div class="stat">
+            <span class="stat__number" data-target="250" data-suffix="+">0</span>
+            <span class="stat__label">Homes Sold</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__number" data-target="180" data-prefix="$" data-suffix="M+">0</span>
+            <span class="stat__label">In Transactions</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__number" data-target="12" data-suffix=" Years">0</span>
+            <span class="stat__label">Local Expertise</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#search" class="hero__scroll-hint" aria-label="Scroll down">
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: SMART SEARCH
+    ============================================================ -->
+    <section class="search-section" id="search">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Property Search</p>
+          <h2 class="section-title">Find Your Perfect Home</h2>
+        </div>
+
+        <div class="search-bar-wrap reveal">
+          <div class="search-bar">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+            <input
+              type="search"
+              id="propertySearch"
+              class="search-input"
+              placeholder="Try: West Vancouver, pool, under $3M..."
+              aria-label="Search properties"
+              enterkeyhint="search"
+            />
+            <button class="search-submit btn btn--coral">Search</button>
+          </div>
+          <div class="filter-pills" role="group" aria-label="Property type filters">
+            <button class="pill pill--active" data-filter="all">All</button>
+            <button class="pill" data-filter="houses">Houses</button>
+            <button class="pill" data-filter="condos">Condos</button>
+            <button class="pill" data-filter="townhomes">Townhomes</button>
+            <button class="pill" data-filter="luxury">Luxury</button>
+            <button class="pill" data-filter="new-development">New Development</button>
+          </div>
+        </div>
+
+        <div class="property-grid">
+
+          <article class="property-card reveal" data-category="luxury houses">
+            <div class="property-card__image-wrap">
+              <picture>
+                <source type="image/webp"
+                  srcset="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?fm=webp&w=400&q=80 400w,
+                          https://images.unsplash.com/photo-1600585154340-be6161a56a0c?fm=webp&w=800&q=80 800w"
+                  sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw" />
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+                  srcset="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80 400w,
+                          https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80 800w"
+                  sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                  alt="West Vancouver luxury home with ocean views"
+                  class="property-card__image"
+                  loading="lazy"
+                  width="800" height="600"
+                />
+              </picture>
+              <span class="property-card__badge">$2,850,000</span>
+              <span class="property-card__tag">Featured</span>
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__address">135 Oceanview Drive, West Vancouver</h3>
+              <div class="property-card__meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 22V7l9-5 9 5v15"/><rect x="9" y="12" width="6" height="10"/></svg>
+                  4 Beds
+                </span>
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><path d="M10 5 8 7"/><path d="m12 4-1.5 1.5"/><path d="M2 12h20"/></svg>
+                  3 Baths
+                </span>
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                  2,800 sqft
+                </span>
+              </div>
+              <a href="#" class="btn btn--outline-mocha property-card__cta">View Details</a>
+            </div>
+          </article>
+
+          <article class="property-card reveal" data-category="condos luxury">
+            <div class="property-card__image-wrap">
+              <picture>
+                <source type="image/webp"
+                  srcset="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?fm=webp&w=400&q=80 400w,
+                          https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?fm=webp&w=800&q=80 800w"
+                  sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw" />
+                <img
+                  src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80"
+                  srcset="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&q=80 400w,
+                          https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80 800w"
+                  sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                  alt="Yaletown penthouse with city views"
+                  class="property-card__image"
+                  loading="lazy"
+                  width="800" height="600"
+                />
+              </picture>
+              <span class="property-card__badge">$1,680,000</span>
+              <span class="property-card__tag">Penthouse</span>
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__address">2001–1238 Seymour St, Yaletown</h3>
+              <div class="property-card__meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 22V7l9-5 9 5v15"/><rect x="9" y="12" width="6" height="10"/></svg>
+                  2 Beds
+                </span>
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><path d="M10 5 8 7"/><path d="m12 4-1.5 1.5"/><path d="M2 12h20"/></svg>
+                  2 Baths
+                </span>
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                  1,200 sqft
+                </span>
+              </div>
+              <a href="#" class="btn btn--outline-mocha property-card__cta">View Details</a>
+            </div>
+          </article>
+
+          <article class="property-card reveal" data-category="houses luxury">
+            <div class="property-card__image-wrap">
+              <picture>
+                <source type="image/webp"
+                  srcset="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?fm=webp&w=400&q=80 400w,
+                          https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?fm=webp&w=800&q=80 800w"
+                  sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw" />
+                <img
+                  src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80"
+                  srcset="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=400&q=80 400w,
+                          https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80 800w"
+                  sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                  alt="Kitsilano character home with craftsman details"
+                  class="property-card__image"
+                  loading="lazy"
+                  width="800" height="600"
+                />
+              </picture>
+              <span class="property-card__badge">$3,200,000</span>
+              <span class="property-card__tag">Character Home</span>
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__address">2847 Point Grey Road, Kitsilano</h3>
+              <div class="property-card__meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 22V7l9-5 9 5v15"/><rect x="9" y="12" width="6" height="10"/></svg>
+                  5 Beds
+                </span>
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><path d="M10 5 8 7"/><path d="m12 4-1.5 1.5"/><path d="M2 12h20"/></svg>
+                  4 Baths
+                </span>
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                  3,100 sqft
+                </span>
+              </div>
+              <a href="#" class="btn btn--outline-mocha property-card__cta">View Details</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="view-all-wrap reveal">
+          <a href="#" class="view-all-link">View All Listings <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: COMMUNITY SPOTLIGHT
+    ============================================================ -->
+    <section class="communities" id="communities">
+      <div class="container">
+        <div class="section-header section-header--light reveal">
+          <p class="section-eyebrow section-eyebrow--gold">Neighbourhoods</p>
+          <h2 class="section-title section-title--white">Explore Vancouver's Finest Communities</h2>
+        </div>
+      </div>
+
+      <div class="communities__scroll-wrap">
+        <div class="communities__track" id="communitiesTrack">
+
+          <article class="community-card reveal">
+            <picture>
+              <source type="image/webp" srcset="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?fm=webp&w=280&q=65 280w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?fm=webp&w=600&q=80 600w" sizes="(max-width: 639px) 280px, 400px" />
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" srcset="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=280&q=65 280w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80 400w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80 600w" sizes="(max-width: 639px) 280px, 400px" alt="West Vancouver coastline" class="community-card__img" loading="lazy" width="600" height="800" />
+            </picture>
+            <div class="community-card__overlay"></div>
+            <div class="community-card__content">
+              <h3 class="community-card__name">West Vancouver</h3>
+              <p class="community-card__tagline">Luxury estates with stunning ocean views</p>
+              <a href="#" class="community-card__cta">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </article>
+
+          <article class="community-card reveal">
+            <picture>
+              <source type="image/webp" srcset="https://images.unsplash.com/photo-1486325212027-8081e485255e?fm=webp&w=280&q=65 280w, https://images.unsplash.com/photo-1486325212027-8081e485255e?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1486325212027-8081e485255e?fm=webp&w=600&q=80 600w" sizes="(max-width: 639px) 280px, 400px" />
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" srcset="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=280&q=65 280w, https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&q=80 400w, https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80 600w" sizes="(max-width: 639px) 280px, 400px" alt="Yaletown urban waterfront" class="community-card__img" loading="lazy" width="600" height="800" />
+            </picture>
+            <div class="community-card__overlay"></div>
+            <div class="community-card__content">
+              <h3 class="community-card__name">Yaletown</h3>
+              <p class="community-card__tagline">Urban sophistication meets waterfront living</p>
+              <a href="#" class="community-card__cta">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </article>
+
+          <article class="community-card reveal">
+            <picture>
+              <source type="image/webp" srcset="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?fm=webp&w=280&q=65 280w, https://images.unsplash.com/photo-1572120360610-d971b9d7767c?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1572120360610-d971b9d7767c?fm=webp&w=600&q=80 600w" sizes="(max-width: 639px) 280px, 400px" />
+              <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600&q=80" srcset="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=280&q=65 280w, https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=400&q=80 400w, https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600&q=80 600w" sizes="(max-width: 639px) 280px, 400px" alt="Kitsilano beach neighbourhood" class="community-card__img" loading="lazy" width="600" height="800" />
+            </picture>
+            <div class="community-card__overlay"></div>
+            <div class="community-card__content">
+              <h3 class="community-card__name">Kitsilano</h3>
+              <p class="community-card__tagline">Beachside charm with village atmosphere</p>
+              <a href="#" class="community-card__cta">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </article>
+
+          <article class="community-card reveal">
+            <picture>
+              <source type="image/webp" srcset="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?fm=webp&w=280&q=65 280w, https://images.unsplash.com/photo-1449824913935-59a10b8d2000?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1449824913935-59a10b8d2000?fm=webp&w=600&q=80 600w" sizes="(max-width: 639px) 280px, 400px" />
+              <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" srcset="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=280&q=65 280w, https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&q=80 400w, https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80 600w" sizes="(max-width: 639px) 280px, 400px" alt="Coal Harbour skyline and waterfront" class="community-card__img" loading="lazy" width="600" height="800" />
+            </picture>
+            <div class="community-card__overlay"></div>
+            <div class="community-card__content">
+              <h3 class="community-card__name">Coal Harbour</h3>
+              <p class="community-card__tagline">Iconic skyline views, premier waterfront</p>
+              <a href="#" class="community-card__cta">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </article>
+
+          <article class="community-card reveal">
+            <picture>
+              <source type="image/webp" srcset="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?fm=webp&w=280&q=65 280w, https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?fm=webp&w=600&q=80 600w" sizes="(max-width: 639px) 280px, 400px" />
+              <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=600&q=80" srcset="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=280&q=65 280w, https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=400&q=80 400w, https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=600&q=80 600w" sizes="(max-width: 639px) 280px, 400px" alt="Shaughnessy heritage estate" class="community-card__img" loading="lazy" width="600" height="800" />
+            </picture>
+            <div class="community-card__overlay"></div>
+            <div class="community-card__content">
+              <h3 class="community-card__name">Shaughnessy</h3>
+              <p class="community-card__tagline">Heritage estates, tree-lined grandeur</p>
+              <a href="#" class="community-card__cta">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="communities__dots" id="communityDots" aria-label="Community scroll indicators">
+        <button class="dot dot--active" data-index="0" aria-label="West Vancouver"></button>
+        <button class="dot" data-index="1" aria-label="Yaletown"></button>
+        <button class="dot" data-index="2" aria-label="Kitsilano"></button>
+        <button class="dot" data-index="3" aria-label="Coal Harbour"></button>
+        <button class="dot" data-index="4" aria-label="Shaughnessy"></button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: SELLER'S VALUATION TOOL
+    ============================================================ -->
+    <section class="valuation" id="valuation">
+      <div class="valuation__accent-bar" aria-hidden="true"></div>
+      <div class="container">
+        <div class="valuation__grid">
+
+          <div class="valuation__form-col">
+            <div class="section-header reveal">
+              <p class="section-eyebrow">Seller's Tool</p>
+              <h2 class="section-title">Discover Your Home's<br />True Value</h2>
+              <p class="section-subtitle">Get an instant AI-powered valuation in under 60 seconds. No obligation.</p>
+            </div>
+
+            <div class="valuation-widget reveal" id="valuationWidget">
+
+              <!-- Step 1 -->
+              <div class="val-step" id="valStep1">
+                <div class="val-step__header">
+                  <div class="val-step__indicator">
+                    <span class="val-step__num active">1</span>
+                    <span class="val-step__num">2</span>
+                    <span class="val-step__num">3</span>
+                  </div>
+                  <p class="val-step__label">Your Property Address</p>
+                </div>
+                <div class="val-field">
+                  <label for="valAddress" class="val-label">Street Address</label>
+                  <input type="text" id="valAddress" class="val-input" placeholder="e.g. 123 Marine Drive, West Vancouver" autocomplete="street-address" enterkeyhint="go" />
+                </div>
+                <button class="btn btn--coral btn--full" id="valStep1Btn">Get My Free Valuation</button>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="val-step val-step--hidden" id="valStep2">
+                <div class="val-step__header">
+                  <div class="val-step__indicator">
+                    <span class="val-step__num done">✓</span>
+                    <span class="val-step__num active">2</span>
+                    <span class="val-step__num">3</span>
+                  </div>
+                  <p class="val-step__label">Your Contact Details</p>
+                </div>
+                <div class="val-field">
+                  <label for="valName" class="val-label">Full Name</label>
+                  <input type="text" id="valName" class="val-input" placeholder="Your name" autocomplete="name" enterkeyhint="next" />
+                </div>
+                <div class="val-field">
+                  <label for="valEmail" class="val-label">Email Address</label>
+                  <input type="email" id="valEmail" class="val-input" placeholder="your@email.com" autocomplete="email" enterkeyhint="next" />
+                </div>
+                <div class="val-field">
+                  <label for="valPhone" class="val-label">Phone Number</label>
+                  <input type="tel" id="valPhone" class="val-input" placeholder="+1 (604) 000-0000" autocomplete="tel" enterkeyhint="go" />
+                </div>
+                <button class="btn btn--coral btn--full" id="valStep2Btn">Generate My Report</button>
+              </div>
+
+              <!-- Step 3: Loading -->
+              <div class="val-step val-step--hidden" id="valStep3">
+                <div class="val-loading">
+                  <div class="val-loading__icon">
+                    <svg viewBox="0 0 50 50" class="val-spinner" aria-hidden="true">
+                      <circle cx="25" cy="25" r="20" fill="none" stroke-width="4"/>
+                    </svg>
+                  </div>
+                  <p class="val-loading__title">Generating Your Report</p>
+                  <p class="val-loading__msg" id="valLoadingMsg">Analyzing 847 recent sales in your area...</p>
+                  <div class="val-progress-bar">
+                    <div class="val-progress-fill" id="valProgressFill"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 4: Result -->
+              <div class="val-step val-step--hidden" id="valStep4">
+                <div class="val-result">
+                  <div class="val-result__header">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="val-result__icon" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <p class="val-result__ready">Your Valuation is Ready</p>
+                  </div>
+                  <p class="val-result__address" id="valResultAddress">123 Marine Drive, West Vancouver</p>
+                  <div class="val-result__range">
+                    <span class="val-result__label">Estimated Market Value</span>
+                    <span class="val-result__value">$2,650,000 – $2,850,000</span>
+                  </div>
+                  <div class="val-result__badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                    Market Trending Up +4.2% YoY
+                  </div>
+                  <div class="val-result__actions">
+                    <a href="#" class="btn btn--outline-mocha">Download Full Report</a>
+                    <a href="#" class="btn btn--coral">Book a Consultation</a>
+                  </div>
+                  <button class="val-result__restart" id="valRestart">Start New Valuation</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="valuation__info-col reveal">
+            <div class="valuation__features">
+              <h3 class="valuation__features-title">What's included in your report</h3>
+              <ul class="valuation__feature-list">
+                <li class="valuation__feature-item">
+                  <span class="feature-check">✓</span>
+                  <div>
+                    <strong>Live MLS Data</strong>
+                    <p>Based on real-time Multiple Listing Service transactions</p>
+                  </div>
+                </li>
+                <li class="valuation__feature-item">
+                  <span class="feature-check">✓</span>
+                  <div>
+                    <strong>Comparable Sales Analysis</strong>
+                    <p>Matched against 10+ similar properties sold within 6 months</p>
+                  </div>
+                </li>
+                <li class="valuation__feature-item">
+                  <span class="feature-check">✓</span>
+                  <div>
+                    <strong>Market Trend Insights</strong>
+                    <p>Neighbourhood price trends, days-on-market, and absorption rate</p>
+                  </div>
+                </li>
+                <li class="valuation__feature-item">
+                  <span class="feature-check">✓</span>
+                  <div>
+                    <strong>No Spam, Ever</strong>
+                    <p>Your information stays private. One report, no follow-up lists.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="valuation__trust">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&q=80" alt="Aria Chen" class="valuation__trust-avatar" />
+                <div>
+                  <p class="valuation__trust-name">Aria Chen</p>
+                  <p class="valuation__trust-title">REALTOR® | RE/MAX Select Properties</p>
+                  <div class="stars" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: SOCIAL PROOF & AUTHORITY
+    ============================================================ -->
+    <section class="social-proof" id="social-proof">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Client Stories</p>
+          <h2 class="section-title">Trusted by Vancouver Homeowners</h2>
+        </div>
+
+        <div class="proof-grid">
+
+          <!-- Reviews -->
+          <div class="reviews-col reveal">
+            <div class="review-score">
+              <div class="review-score__badge">
+                <span class="review-score__number">5.0</span>
+                <div class="stars" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+                <p class="review-score__count">Google Reviews</p>
+              </div>
+              <div class="review-score__divider"></div>
+              <div class="review-score__detail">
+                <p class="review-score__total">98 reviews</p>
+                <p class="review-score__subtitle">Verified Client Feedback</p>
+              </div>
+            </div>
+
+            <div class="testimonial-carousel" id="testimonialCarousel" aria-live="polite">
+              <div class="testimonial-track" id="testimonialTrack">
+
+                <blockquote class="testimonial">
+                  <div class="testimonial__stars" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+                  <p class="testimonial__quote">"Aria's market knowledge is unparalleled. She sold our home 15% above asking in just 4 days. Absolutely phenomenal — we couldn't have asked for a better experience."</p>
+                  <footer class="testimonial__author">
+                    <div class="testimonial__avatar">M</div>
+                    <div>
+                      <cite class="testimonial__name">Michael & Sarah T.</cite>
+                      <span class="testimonial__detail">West Vancouver | Sold in 4 Days</span>
+                    </div>
+                  </footer>
+                </blockquote>
+
+                <blockquote class="testimonial">
+                  <div class="testimonial__stars" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+                  <p class="testimonial__quote">"As first-time buyers, we felt completely overwhelmed. Aria guided us every step of the way and found us our dream home in Kitsilano within our budget."</p>
+                  <footer class="testimonial__author">
+                    <div class="testimonial__avatar">J</div>
+                    <div>
+                      <cite class="testimonial__name">Jenny L.</cite>
+                      <span class="testimonial__detail">Kitsilano | First-Time Buyer</span>
+                    </div>
+                  </footer>
+                </blockquote>
+
+                <blockquote class="testimonial">
+                  <div class="testimonial__stars" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+                  <p class="testimonial__quote">"Professional, responsive, and incredibly strategic. Aria is the only agent I'll ever use in Vancouver. Her negotiation skills saved us $120K on our Coal Harbour penthouse."</p>
+                  <footer class="testimonial__author">
+                    <div class="testimonial__avatar">D</div>
+                    <div>
+                      <cite class="testimonial__name">David K.</cite>
+                      <span class="testimonial__detail">Coal Harbour | Luxury Purchase</span>
+                    </div>
+                  </footer>
+                </blockquote>
+
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-dot dot--active" data-slide="0" aria-label="Review 1"></button>
+                <button class="carousel-dot" data-slide="1" aria-label="Review 2"></button>
+                <button class="carousel-dot" data-slide="2" aria-label="Review 3"></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Just Sold -->
+          <div class="just-sold-col reveal">
+            <h3 class="just-sold__title">Just Sold</h3>
+            <ul class="sold-list" aria-label="Recently sold properties">
+
+              <li class="sold-item">
+                <div class="sold-item__dot"></div>
+                <div class="sold-item__info">
+                  <p class="sold-item__address">412 Eyremount Drive, West Vancouver</p>
+                  <p class="sold-item__sub">4 bed · 3 bath · 3,200 sqft</p>
+                </div>
+                <div class="sold-item__stats">
+                  <p class="sold-item__price">$3,450,000</p>
+                  <p class="sold-item__dom">7 DOM</p>
+                  <span class="sold-item__over">+11% over asking</span>
+                </div>
+              </li>
+
+              <li class="sold-item">
+                <div class="sold-item__dot"></div>
+                <div class="sold-item__info">
+                  <p class="sold-item__address">1803 Beach Ave, West End</p>
+                  <p class="sold-item__sub">2 bed · 2 bath · 1,050 sqft</p>
+                </div>
+                <div class="sold-item__stats">
+                  <p class="sold-item__price">$1,295,000</p>
+                  <p class="sold-item__dom">3 DOM</p>
+                  <span class="sold-item__over">+8% over asking</span>
+                </div>
+              </li>
+
+              <li class="sold-item">
+                <div class="sold-item__dot"></div>
+                <div class="sold-item__info">
+                  <p class="sold-item__address">3388 Osler Street, Shaughnessy</p>
+                  <p class="sold-item__sub">6 bed · 5 bath · 5,100 sqft</p>
+                </div>
+                <div class="sold-item__stats">
+                  <p class="sold-item__price">$6,200,000</p>
+                  <p class="sold-item__dom">12 DOM</p>
+                  <span class="sold-item__over">+4% over asking</span>
+                </div>
+              </li>
+
+              <li class="sold-item">
+                <div class="sold-item__dot"></div>
+                <div class="sold-item__info">
+                  <p class="sold-item__address">2207 Yew Street, Kitsilano</p>
+                  <p class="sold-item__sub">4 bed · 3 bath · 2,400 sqft</p>
+                </div>
+                <div class="sold-item__stats">
+                  <p class="sold-item__price">$2,780,000</p>
+                  <p class="sold-item__dom">5 DOM</p>
+                  <span class="sold-item__over">+15% over asking</span>
+                </div>
+              </li>
+
+              <li class="sold-item">
+                <div class="sold-item__dot"></div>
+                <div class="sold-item__info">
+                  <p class="sold-item__address">1188 Pender St, Coal Harbour</p>
+                  <p class="sold-item__sub">3 bed · 2 bath · 1,680 sqft</p>
+                </div>
+                <div class="sold-item__stats">
+                  <p class="sold-item__price">$2,100,000</p>
+                  <p class="sold-item__dom">9 DOM</p>
+                  <span class="sold-item__over">+6% over asking</span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- Press Logos -->
+        <div class="press-strip reveal">
+          <p class="press-strip__label">As Seen In</p>
+          <div class="press-logos">
+            <span class="press-logo">Globe and Mail</span>
+            <span class="press-logo">Vancouver Sun</span>
+            <span class="press-logo">Business in Vancouver</span>
+            <span class="press-logo">Architectural Digest</span>
+            <span class="press-logo">Mansion Global</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: ABOUT & VISION
+    ============================================================ -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__grid">
+
+          <div class="about__image-col reveal">
+            <div class="about__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
+                alt="Aria Chen, Vancouver REALTOR"
+                class="about__photo"
+                loading="lazy"
+              />
+              <button class="about__play-btn" aria-label="Watch Aria's story video">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <div class="about__image-badge">
+                <span class="about__image-badge-num">Top 1%</span>
+                <span class="about__image-badge-label">RE/MAX Agent</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__text-col reveal">
+            <p class="section-eyebrow">About Aria</p>
+            <h2 class="section-title">Meet Aria Chen</h2>
+            <p class="about__subtitle">Vancouver's Trusted Real Estate Authority Since 2012</p>
+
+            <p class="about__body">
+              Born and raised in Vancouver, Aria Chen has spent over a decade building deep roots in the city's most sought-after neighbourhoods. Her intimate knowledge of West Vancouver, Yaletown, Kitsilano, and beyond isn't learned from a manual — it's lived. She knows which blocks offer the best school catchments, where ocean views are worth a premium, and which communities are quietly appreciating before the market catches on.
+            </p>
+            <p class="about__body">
+              Aria's philosophy is simple: your home is likely the single largest financial decision of your life, and you deserve a partner who treats it that way. With a reputation built on honest guidance, strategic negotiation, and relentless advocacy, she has helped over 250 families find their place in Vancouver — many of whom remain clients and friends to this day.
+            </p>
+
+            <div class="about__stats-row">
+              <div class="about__stat">
+                <span class="about__stat-num">250+</span>
+                <span class="about__stat-label">Homes Sold</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-num">Top 1%</span>
+                <span class="about__stat-label">RE/MAX Agent</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-num">12 Yrs</span>
+                <span class="about__stat-label">Experience</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-num">5★</span>
+                <span class="about__stat-label">Rated</span>
+              </div>
+            </div>
+
+            <div class="about__ctas">
+              <button class="btn btn--outline-mocha about__play-trigger">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Watch My Story
+              </button>
+              <a href="#valuation" class="btn btn--coral">Book Free Consultation</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <p class="footer__logo">ARIA CHEN <span>| Real Estate</span></p>
+          <p class="footer__tagline">Vancouver's trusted real estate authority — delivering exceptional results with quiet luxury and local expertise since 2012.</p>
+          <div class="footer__socials">
+            <a href="#" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="WeChat" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 4C5.36 4 2 6.69 2 10c0 1.89 1.08 3.56 2.78 4.66L4 17l2.29-1.15C7.1 16.27 8.27 16.5 9.5 16.5c.17 0 .34 0 .51-.02a5.17 5.17 0 0 1-.01-.48c0-3.04 2.86-5.5 6.5-5.5.17 0 .33 0 .5.01C16.52 7.86 13.27 4 9.5 4zm-2 3.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM16.5 12c-3.04 0-5.5 2.01-5.5 4.5S13.46 21 16.5 21c.68 0 1.33-.1 1.92-.29L21 22l-.78-2.34C21.35 18.74 22 17.67 22 16.5c0-2.49-2.46-4.5-5.5-4.5zm-1.5 2.5a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zm3 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer__nav" aria-label="Quick links">
+          <h4 class="footer__nav-title">Quick Links</h4>
+          <ul>
+            <li><a href="#search">Browse Listings</a></li>
+            <li><a href="#valuation">Home Valuation</a></li>
+            <li><a href="#communities">Neighbourhoods</a></li>
+            <li><a href="#social-proof">Market Reports</a></li>
+            <li><a href="#about">About Aria</a></li>
+            <li><a href="#">Blog & Insights</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__nav" aria-label="Communities">
+          <h4 class="footer__nav-title">Communities</h4>
+          <ul>
+            <li><a href="#">West Vancouver</a></li>
+            <li><a href="#">Yaletown</a></li>
+            <li><a href="#">Kitsilano</a></li>
+            <li><a href="#">Coal Harbour</a></li>
+            <li><a href="#">Shaughnessy</a></li>
+            <li><a href="#">North Vancouver</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <h4 class="footer__nav-title">Contact</h4>
+          <ul class="footer__contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.46 2 2 0 0 1 3.55 1.3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              <a href="tel:+16045550182">+1 (604) 555-0182</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:aria@ariachenrealestate.com">aria@ariachenrealestate.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>1200–1166 Alberni St, Vancouver, BC</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Aria Chen Real Estate. All rights reserved. Licensed REALTOR® — RE/MAX Select Properties</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       STICKY MOBILE BAR
+  ============================================================ -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar" aria-label="Quick contact">
+    <a href="tel:+16045550182" class="mobile-sticky-bar__btn mobile-sticky-bar__btn--call">
+      <span aria-hidden="true">📞</span> Call Now
+    </a>
+    <a href="https://wa.me/16045550182" class="mobile-sticky-bar__btn mobile-sticky-bar__btn--whatsapp">
+      <span aria-hidden="true">💬</span> WhatsApp
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
